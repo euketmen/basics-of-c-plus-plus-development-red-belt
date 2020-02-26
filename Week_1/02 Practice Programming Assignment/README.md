@@ -28,7 +28,7 @@ private:
 * объявление класса Logger, при этом вы можете при необходимости добавлять в него дополнительные поля и методы
 * определения всех методов класса Logger
 
-[log.cpp](https://github.com/Hitoku/basics-of-c-plus-plus-development-red-belt/blob/master/Week_1/02%20Prectice%20Programming%20Assignment/Source/log.cpp)
+[log.cpp](https://github.com/Hitoku/basics-of-c-plus-plus-development-red-belt/blob/master/Week_1/02%20Practice%20Programming%20Assignment/Source/log.cpp)
 
 ##### Замечание #####
 
