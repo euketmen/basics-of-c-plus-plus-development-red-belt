@@ -1,6 +1,4 @@
-﻿// This is a personal academic project. Dear PVS-Studio, please check it.
-// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
-#include "test_runner.h"
+﻿#include "test_runner.h"
 
 #include <numeric>
 #include <iostream>
@@ -100,7 +98,8 @@ void TestLooping()
     std::ostringstream os;
     for (const auto& page : paginate_v) 
     {
-        for (int x : page) {
+        for (int x : page) 
+		{
             os << x << ' ';
         }
         os << '\n';
@@ -160,7 +159,8 @@ void TestPagePagination()
         for (const auto& split_by_4 : Paginate(split_by_9, 4)) 
         {
             lines.push_back({});
-            for (int item : split_by_4) {
+            for (int item : split_by_4) 
+			{
                 lines.back().push_back(item);
             }
         }
