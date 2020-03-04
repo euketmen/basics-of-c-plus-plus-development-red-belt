@@ -123,14 +123,14 @@ void Assert(bool b, const std::string& hint)
 //-------------------------------------------------------------------------------------------------
 #define ASSERT_EQUAL(x, y)                       \
 {                                                \
-	auto calc_x = x;							 \
-	auto calc_y = y;							 \
+    auto calc_x = x;                             \
+    auto calc_y = y;                             \
     {                                            \
         std::ostringstream os;                   \
         os << #x << " != " << #y << ", "         \
-		<< __FILE__ << ":" << __LINE__;       	 \
+        << __FILE__ << ":" << __LINE__;       	 \
         AssertEqual(calc_x, calc_y, os.str());   \
-    }											 \
+    }                                            \
 }
 //-------------------------------------------------------------------------------------------------
 #define ASSERT(x)                         \

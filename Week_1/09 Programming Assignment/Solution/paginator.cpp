@@ -99,7 +99,7 @@ void TestLooping()
     for (const auto& page : paginate_v) 
     {
         for (int x : page) 
-		{
+        {
             os << x << ' ';
         }
         os << '\n';
@@ -112,7 +112,7 @@ void TestModification()
     std::vector<std::string> vs = { "one", "two", "three", "four", "five" };
     for (auto page : Paginate(vs, 2)) 
     {
-        for (auto& word : page) 
+        for (auto& word : page)
         {
             word[0] = toupper(word[0]);
         }
@@ -159,8 +159,8 @@ void TestPagePagination()
         for (const auto& split_by_4 : Paginate(split_by_9, 4)) 
         {
             lines.push_back({});
-            for (int item : split_by_4) 
-			{
+            for (int item : split_by_4)
+            {
                 lines.back().push_back(item);
             }
         }
